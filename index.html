@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a192f" />
+    <meta name="description" content="Service de nettoyage professionnel et de convoyage de véhicules à Dakar, Sénégal" />
+    <link rel="icon" href="/logo.jpeg" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+    <title>O'Clear Lavage — Nettoyage professionnel à Dakar</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(reg => console.log('SW enregistré:', reg.scope))
+            .catch(err => console.error('SW échec:', err));
+        });
+      }
+    </script>
+  </body>
+</html>
