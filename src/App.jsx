@@ -222,7 +222,7 @@ export default function App() {
           <div className="flex flex-wrap justify-center gap-6 text-slate-300 text-sm">
             <a href="tel:+221775364084" className="flex items-center gap-2 hover:text-sky-400 transition-colors">
               <Phone size={16} className="text-sky-400" />
-              77 53 64 08 4
+              77 672 97 40
             </a>
             <span className="flex items-center gap-2">
               <MapPin size={16} className="text-sky-400" />
